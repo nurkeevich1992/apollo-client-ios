@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445B1EA54D158A96FF80F590 /* Pods_AuthDemoTry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA3389239F0C8FA8D272F5C /* Pods_AuthDemoTry.framework */; };
+		8DABAB8523D38EF800655D4C /* AvailableCars.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8DABAB8423D38EF800655D4C /* AvailableCars.graphql */; };
+		8DABAB8723D38F3800655D4C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABAB8623D38F3800655D4C /* API.swift */; };
+		8DABAB8B23D39E8B00655D4C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABAB8A23D39E8B00655D4C /* NetworkManager.swift */; };
+		8DABAB8F23D3E2F400655D4C /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABAB8E23D3E2F400655D4C /* UserManager.swift */; };
+		8DABAB9123D3F2A000655D4C /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABAB9023D3F2A000655D4C /* AuthView.swift */; };
 		8DC6B8BE23D24F72009EF0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6B8BD23D24F72009EF0D3 /* AppDelegate.swift */; };
 		8DC6B8C023D24F72009EF0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6B8BF23D24F72009EF0D3 /* SceneDelegate.swift */; };
 		8DC6B8C223D24F72009EF0D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6B8C123D24F72009EF0D3 /* ContentView.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5947107EA0E734A8C4B82933 /* Pods-AuthDemoTry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthDemoTry.release.xcconfig"; path = "Target Support Files/Pods-AuthDemoTry/Pods-AuthDemoTry.release.xcconfig"; sourceTree = "<group>"; };
+		8DABAB8423D38EF800655D4C /* AvailableCars.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AvailableCars.graphql; sourceTree = "<group>"; };
+		8DABAB8623D38F3800655D4C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = AuthDemoTry/API.swift; sourceTree = SOURCE_ROOT; };
+		8DABAB8A23D39E8B00655D4C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8DABAB8E23D3E2F400655D4C /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		8DABAB9023D3F2A000655D4C /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		8DC6B8BA23D24F72009EF0D3 /* AuthDemoTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthDemoTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC6B8BD23D24F72009EF0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC6B8BF23D24F72009EF0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		8DC6B8C623D24F73009EF0D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DC6B8C923D24F73009EF0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DC6B8CB23D24F73009EF0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9950FE176D45B2218DBF0CDD /* Pods-AuthDemoTry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthDemoTry.debug.xcconfig"; path = "Target Support Files/Pods-AuthDemoTry/Pods-AuthDemoTry.debug.xcconfig"; sourceTree = "<group>"; };
+		9AA3389239F0C8FA8D272F5C /* Pods_AuthDemoTry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthDemoTry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445B1EA54D158A96FF80F590 /* Pods_AuthDemoTry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		261139B3CE382F7B0BFEDDB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AA3389239F0C8FA8D272F5C /* Pods_AuthDemoTry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62421BC6A2FD7A6753783331 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9950FE176D45B2218DBF0CDD /* Pods-AuthDemoTry.debug.xcconfig */,
+				5947107EA0E734A8C4B82933 /* Pods-AuthDemoTry.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8DABAB8323D38E9800655D4C /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				8DABAB8623D38F3800655D4C /* API.swift */,
+				8DABAB8423D38EF800655D4C /* AvailableCars.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
 		8DC6B8B123D24F72009EF0D3 = {
 			isa = PBXGroup;
 			children = (
 				8DC6B8BC23D24F72009EF0D3 /* AuthDemoTry */,
 				8DC6B8BB23D24F72009EF0D3 /* Products */,
+				62421BC6A2FD7A6753783331 /* Pods */,
+				261139B3CE382F7B0BFEDDB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +99,13 @@
 		8DC6B8BC23D24F72009EF0D3 /* AuthDemoTry */ = {
 			isa = PBXGroup;
 			children = (
+				8DABAB8323D38E9800655D4C /* GraphQL */,
 				8DC6B8BD23D24F72009EF0D3 /* AppDelegate.swift */,
 				8DC6B8BF23D24F72009EF0D3 /* SceneDelegate.swift */,
+				8DABAB8E23D3E2F400655D4C /* UserManager.swift */,
+				8DABAB8A23D39E8B00655D4C /* NetworkManager.swift */,
 				8DC6B8C123D24F72009EF0D3 /* ContentView.swift */,
+				8DABAB9023D3F2A000655D4C /* AuthView.swift */,
 				8DC6B8C323D24F73009EF0D3 /* Assets.xcassets */,
 				8DC6B8C823D24F73009EF0D3 /* LaunchScreen.storyboard */,
 				8DC6B8CB23D24F73009EF0D3 /* Info.plist */,
@@ -82,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DC6B8CE23D24F73009EF0D3 /* Build configuration list for PBXNativeTarget "AuthDemoTry" */;
 			buildPhases = (
+				4A76F9B465A614F2A74A8503 /* [CP] Check Pods Manifest.lock */,
+				8DABAB8223D38E8000655D4C /* GraphQL API */,
 				8DC6B8B623D24F72009EF0D3 /* Sources */,
 				8DC6B8B723D24F72009EF0D3 /* Frameworks */,
 				8DC6B8B823D24F72009EF0D3 /* Resources */,
+				12004E26BB273F634771F955 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DABAB8523D38EF800655D4C /* AvailableCars.graphql in Resources */,
 				8DC6B8CA23D24F73009EF0D3 /* LaunchScreen.storyboard in Resources */,
 				8DC6B8C723D24F73009EF0D3 /* Preview Assets.xcassets in Resources */,
 				8DC6B8C423D24F73009EF0D3 /* Assets.xcassets in Resources */,
@@ -141,13 +192,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12004E26BB273F634771F955 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthDemoTry/Pods-AuthDemoTry-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthDemoTry/Pods-AuthDemoTry-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthDemoTry/Pods-AuthDemoTry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A76F9B465A614F2A74A8503 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthDemoTry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DABAB8223D38E8000655D4C /* GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --endpoint='http://localhost:4000/' API.swift\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DC6B8B623D24F72009EF0D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DABAB9123D3F2A000655D4C /* AuthView.swift in Sources */,
 				8DC6B8BE23D24F72009EF0D3 /* AppDelegate.swift in Sources */,
 				8DC6B8C023D24F72009EF0D3 /* SceneDelegate.swift in Sources */,
+				8DABAB8F23D3E2F400655D4C /* UserManager.swift in Sources */,
+				8DABAB8B23D39E8B00655D4C /* NetworkManager.swift in Sources */,
+				8DABAB8723D38F3800655D4C /* API.swift in Sources */,
 				8DC6B8C223D24F72009EF0D3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +397,7 @@
 		};
 		8DC6B8CF23D24F73009EF0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9950FE176D45B2218DBF0CDD /* Pods-AuthDemoTry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +418,7 @@
 		};
 		8DC6B8D023D24F73009EF0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5947107EA0E734A8C4B82933 /* Pods-AuthDemoTry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

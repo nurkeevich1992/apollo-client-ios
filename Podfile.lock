@@ -1,0 +1,22 @@
+PODS:
+  - Apollo (0.21.0):
+    - Apollo/Core (= 0.21.0)
+  - Apollo/Core (0.21.0)
+  - SwiftKeychainWrapper (3.4.0)
+
+DEPENDENCIES:
+  - Apollo
+  - SwiftKeychainWrapper
+
+SPEC REPOS:
+  trunk:
+    - Apollo
+    - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  Apollo: 56a0aa81b744bf2810a8277e705f155c91ac9055
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+
+PODFILE CHECKSUM: 862b7b8e147210c7f4664bc16932cd1b1c681f41
+
+COCOAPODS: 1.8.4

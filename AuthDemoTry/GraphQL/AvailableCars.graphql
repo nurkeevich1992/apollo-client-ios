@@ -1,0 +1,64 @@
+query AvailableCars{
+  cars {
+    id
+    make
+    model
+    from
+    year
+    to
+    date
+    driver{
+      name
+      phone
+    }
+    isAvailable
+    updatedAt
+    createdAt
+    
+  }
+}
+
+mutation signUp($name: String!, $email: String!, $password: String!, $phone: String!) {
+  signup(
+    data: {
+      name: $name
+      email: $email
+      password: $password
+      phone: $phone
+    }
+  ) {
+    token
+    user {
+      id
+      email
+      name
+      phone
+    }
+  }
+}
+
+mutation signIn($email: String!, $password: String!){
+  login(
+    data: {
+      email: $email,
+      password: $password
+    }
+  ) {
+    token
+    user {
+      id
+      email
+      name
+      phone
+    }
+  }
+}
+
+query User{
+  me {
+    id
+    email
+    name
+    phone
+  }
+}

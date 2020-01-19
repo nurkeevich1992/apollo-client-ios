@@ -7,15 +7,25 @@
 //
 
 import SwiftUI
+import SwiftKeychainWrapper
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+    @EnvironmentObject var user: UserManager
+    
+    func getUser() {
+        user.listen()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    var body: some View {
+        Group {
+            if (user.user != nil) {
+                Text("Welcome Back")
+                Button(action: user.signOut, label: {
+                    Text("Sign Out")
+                })
+            } else {
+                AuthView()
+            }
+        }.onAppear(perform: getUser)
     }
 }
